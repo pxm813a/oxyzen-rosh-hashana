@@ -256,11 +256,79 @@
     </div>
     <div class="hero-visual">
       <div class="frame">
-        <svg viewBox="0 0 200 200" width="55%" aria-hidden="true">
-          <circle cx="100" cy="112" r="62" fill="var(--pom)"/>
-          <path d="M78 52 Q84 30 100 40 Q116 30 122 52 Z" fill="var(--pom-deep)"/>
-          <path d="M88 42 L92 24 L100 40 L108 24 L112 42 Z" fill="var(--gold)"/>
-        </svg>
+        <svg viewBox="0 0 320 400" width="88%" aria-hidden="true">
+  <defs>
+    <radialGradient id="pomBody" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#D64B58"/>
+      <stop offset="55%" stop-color="#A6192E"/>
+      <stop offset="100%" stop-color="#7A1122"/>
+    </radialGradient>
+    <radialGradient id="pomHalf" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#F3EAD3"/>
+    </radialGradient>
+    <radialGradient id="seedGrad" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#E8637A"/>
+      <stop offset="60%" stop-color="#A6192E"/>
+      <stop offset="100%" stop-color="#7A1122"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8FA36B"/>
+      <stop offset="100%" stop-color="#5E7A45"/>
+    </linearGradient>
+    <linearGradient id="honeyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E7B94A"/>
+      <stop offset="100%" stop-color="#C6A14E"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="126" cy="112" rx="26" ry="14" fill="url(#leafGrad)" transform="rotate(-28 126 112)"/>
+  <ellipse cx="170" cy="106" rx="22" ry="12" fill="url(#leafGrad)" transform="rotate(24 170 106)"/>
+
+  <path d="M118 95 Q124 76 138 84 Q146 66 156 86 Q168 74 176 94 Q160 88 148 96 Q136 86 118 95 Z" fill="#A67F2E"/>
+
+  <path d="M148 100
+           C90 100 62 150 62 214
+           C62 280 96 322 148 322
+           C200 322 234 280 234 214
+           C234 150 206 100 148 100 Z" fill="url(#pomBody)"/>
+  <ellipse cx="112" cy="150" rx="34" ry="46" fill="#E8637A" opacity=".28"/>
+
+  <path d="M182 210
+           C182 172 214 158 244 168
+           C276 178 292 210 292 246
+           C292 288 262 318 226 318
+           C196 318 178 296 176 268
+           C175 250 178 228 182 210 Z" fill="url(#pomHalf)" stroke="#C6A14E" stroke-width="3"/>
+
+  <g>
+    <circle cx="210" cy="212" r="9" fill="url(#seedGrad)"/>
+    <circle cx="228" cy="206" r="10" fill="url(#seedGrad)"/>
+    <circle cx="246" cy="212" r="9" fill="url(#seedGrad)"/>
+    <circle cx="200" cy="230" r="9.5" fill="url(#seedGrad)"/>
+    <circle cx="218" cy="232" r="10.5" fill="url(#seedGrad)"/>
+    <circle cx="238" cy="230" r="10" fill="url(#seedGrad)"/>
+    <circle cx="257" cy="228" r="9" fill="url(#seedGrad)"/>
+    <circle cx="208" cy="252" r="10" fill="url(#seedGrad)"/>
+    <circle cx="228" cy="255" r="11" fill="url(#seedGrad)"/>
+    <circle cx="249" cy="252" r="10" fill="url(#seedGrad)"/>
+    <circle cx="266" cy="246" r="8.5" fill="url(#seedGrad)"/>
+    <circle cx="216" cy="275" r="9.5" fill="url(#seedGrad)"/>
+    <circle cx="237" cy="278" r="10" fill="url(#seedGrad)"/>
+    <circle cx="256" cy="272" r="9" fill="url(#seedGrad)"/>
+    <circle cx="228" cy="297" r="8.5" fill="url(#seedGrad)"/>
+    <circle cx="245" cy="294" r="8" fill="url(#seedGrad)"/>
+    <circle cx="205" cy="207" r="3" fill="#fff" opacity=".55"/>
+    <circle cx="223" cy="201" r="3" fill="#fff" opacity=".55"/>
+    <circle cx="213" cy="247" r="3" fill="#fff" opacity=".5"/>
+    <circle cx="251" cy="247" r="3" fill="#fff" opacity=".5"/>
+    <circle cx="232" cy="290" r="2.6" fill="#fff" opacity=".5"/>
+  </g>
+
+  <path d="M255 330 Q259 344 253 356 Q249 364 241 360 Q235 356 240 348 Q248 338 255 330 Z" fill="url(#honeyGrad)"/>
+  <circle cx="238" cy="368" r="4.5" fill="url(#honeyGrad)"/>
+  <circle cx="250" cy="376" r="3" fill="url(#honeyGrad)"/>
+</svg>
       </div>
       <div class="float-badge">
         <div class="t">הטבת ראש השנה</div>
