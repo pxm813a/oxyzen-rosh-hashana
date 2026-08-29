@@ -252,6 +252,40 @@
     .reveal{opacity:1;transform:none}
   }
 
+
+  .premium-sec{background:linear-gradient(175deg,#FDFBF6 0%,#F3EDE2 50%,#FDFBF6 100%);
+    border-block:2px solid var(--gold-soft);position:relative;overflow:hidden}
+  .premium-sec::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(500px 400px at 15% 30%,rgba(143,163,107,.08),transparent 70%),
+      radial-gradient(500px 400px at 85% 70%,rgba(198,161,78,.06),transparent 70%)}
+  .premium-intro{text-align:center;max-width:720px;margin:0 auto 48px;position:relative;z-index:1}
+  .premium-intro .hook{font-family:'Bellefair',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);
+    color:var(--pom-deep);margin-bottom:16px;line-height:1.25}
+  .premium-intro p{color:var(--ink);font-size:1.1rem;line-height:1.75;margin-bottom:14px}
+  .premium-intro p.highlight{font-weight:700;color:var(--pom-deep);font-size:1.15rem}
+  .use-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;
+    margin-bottom:48px;position:relative;z-index:1}
+  .use-case{background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(253,251,246,.95));
+    border:1px solid rgba(198,161,78,.25);border-radius:20px;padding:30px 26px;
+    position:relative;overflow:hidden;
+    box-shadow:0 4px 16px rgba(166,127,46,.06);transition:transform .3s,box-shadow .3s}
+  .use-case::before{content:"";position:absolute;top:0;inset-inline:0;height:3px;
+    background:linear-gradient(90deg,transparent 10%,var(--gold) 50%,transparent 90%);opacity:.4}
+  .use-case:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(166,127,46,.14)}
+  .use-case h3{font-size:1.3rem;color:var(--pom-deep);margin-bottom:8px}
+  .use-case p{color:var(--ink-soft);font-size:1rem;line-height:1.6}
+  .callout-box{background:linear-gradient(135deg,rgba(166,25,46,.06),rgba(166,25,46,.02));
+    border:1px solid rgba(166,25,46,.15);border-radius:20px;padding:36px 32px;
+    max-width:760px;margin:0 auto 48px;position:relative;z-index:1}
+  .callout-box h3{font-size:1.5rem;color:var(--pom-deep);margin-bottom:14px;text-align:center}
+  .callout-box p{color:var(--ink);font-size:1.05rem;line-height:1.7;margin-bottom:10px}
+  .callout-box p:last-child{margin-bottom:0;font-weight:700;text-align:center;color:var(--pom-deep)}
+  .premium-closing{text-align:center;max-width:660px;margin:0 auto;position:relative;z-index:1}
+  .premium-closing .hook{font-family:'Bellefair',serif;font-size:clamp(1.4rem,3vw,2rem);
+    color:var(--pom-deep);margin-bottom:14px}
+  .premium-closing p{color:var(--ink);font-size:1.08rem;line-height:1.7;margin-bottom:16px}
+  .premium-closing .btn{margin-top:8px}
+
 </style>
 </head>
 <body>
@@ -318,7 +352,7 @@
           <div class="price-row"><span class="old">780 ₪</span><span class="new">710 ₪</span></div>
           <a class="btn wa" href="https://wa.me/972506300250?text=היי,%20אשמח%20לתאם%20טיפול%20פרימיום%20בודד%20במחיר%20הטבת%20ראש%20השנה%20✨" target="_blank" rel="noopener">שריינו טיפול</a>
         </div>
-        <div class="card-note">שנה טובה 🍎🍯 ההטבה בתוקף לזמן מוגבל · מספר התורים מוגבל</div>
+        <div class="card-note">שנה טובה 🍎🍯 ההטבה בתוקף לחודש ספטמבר בלבד · ללא כפל מבצעים</div>
       </article>
       <article class="card reveal">
         <div class="card-media">
@@ -331,8 +365,70 @@
           <p style="color:var(--ink);font-size:1rem;font-weight:400">4 טיפולים × 680 ₪ · רצף מקצועי ועקבי לתוצאות מתמשכות</p>
           <a class="btn wa" href="https://wa.me/972506300250?text=היי,%20אשמח%20לתאם%20סדרת%204%20טיפולי%20פרימיום%20בהטבת%20ראש%20השנה%20🌿" target="_blank" rel="noopener">שריינו סדרת טיפולים ←</a>
         </div>
-        <div class="card-note">שנה טובה 🍎🍯 ההטבה בתוקף לזמן מוגבל · מספר התורים מוגבל</div>
+        <div class="card-note">שנה טובה 🍎🍯 ההטבה בתוקף לחודש ספטמבר בלבד · ללא כפל מבצעים</div>
       </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======== PREMIUM TREATMENT DETAIL ======== -->
+<section class="premium-sec" id="premium-detail">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">✨ טיפול הפרימיום</span>
+      <h2>כשהעור שלך זקוק ליותר.<br>הרבה יותר.</h2>
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="7.5" fill="var(--pom)"/><path d="M9.5 7 Q10.5 3.5 12 5.5 Q13.5 3.5 14.5 7 Z" fill="var(--pom-deep)"/></svg>
+      </div>
+    </div>
+
+    <div class="premium-intro reveal">
+      <p>יש טיפולי פנים שמעניקים תחושת רעננות.<br>ויש טיפול שנבנה <b>בדיוק עבור העור שלך.</b></p>
+      <p>טיפול הפרימיום הוא חוויית טיפוח מתקדמת, אישית ומדויקת, המבוססת על שילוב של אקסטרקטים צמחיים וצמחי מרפא איכותיים – הנבחרים בהתאם למצב העור, למראה שלו ולצרכים הייחודיים שלו.</p>
+      <p class="highlight">זהו טיפול שנועד להחזיר לעור את מה שחסר לו: חיוניות, הזנה, רכות, זוהר ומראה מטופח ובריא.</p>
+    </div>
+
+    <div class="sec-head reveal">
+      <span class="eyebrow">הטיפול מותאם במיוחד עבור</span>
+    </div>
+
+    <div class="use-cases">
+      <div class="use-case reveal">
+        <h3>🌅 עור עייף ודהוי</h3>
+        <p>להענקת מראה רענן, חיוני וזוהר יותר.</p>
+      </div>
+      <div class="use-case reveal">
+        <h3>✨ אנטי־אייג׳ינג</h3>
+        <p>לטיפול ממוקד בעור עם סימני גיל וליצירת מראה עור מטופח, גמיש וקורן.</p>
+      </div>
+      <div class="use-case reveal">
+        <h3>💫 החייאת העור</h3>
+        <p>כשהעור נראה חסר חיים, עייף או נטול ברק – זה הזמן להחזיר לו את ה־Glow.</p>
+      </div>
+      <div class="use-case reveal">
+        <h3>💧 הזנה עמוקה</h3>
+        <p>טיפול עשיר ומפנק המעניק לעור תחושת רכות, לחות והזנה.</p>
+      </div>
+      <div class="use-case reveal">
+        <h3>🩷 עור עם נטייה לקופרוזיס</h3>
+        <p>התאמה עדינה ומדויקת לעור רגיש הנוטה לאדמומיות ונימי דם.</p>
+      </div>
+    </div>
+
+    <div class="callout-box reveal">
+      <h3>🔔 חשוב לדעת</h3>
+      <p>טיפול הפרימיום אינו כולל ניקוי שחורים או קומודונים. המטרה כאן שונה לחלוטין.</p>
+      <p>במקום להתמקד בניקוי נקודתי, הטיפול מתמקד <b>באיכות העור</b>, במראה שלו ובתחושה שלו – באמצעות פרוטוקול שנבחר עבורך באופן אישי.</p>
+      <p>זה לא טיפול ניקוי. זו השקעה באיכות העור שלך.</p>
+    </div>
+
+    <div class="premium-closing reveal">
+      <div class="hook">✨ העור שלך לא צריך עוד טיפול שגרתי.<br>הוא צריך טיפול שמבין אותו.</div>
+      <p>מתחילים באבחון והתבוננות מקצועית במצב העור, ובהתאם לכך נבחרים החומרים וההתאמות המתאימות לטיפול.</p>
+      <p>התוצאה הרצויה היא עור שנראה חיוני יותר, מוזן יותר, רך יותר וזוהר יותר – ובעיקר, עור שמרגיש שקיבל בדיוק את מה שהיה חסר לו.</p>
+      <p><b>הגיע הזמן להעניק לעור שלך חוויה אחרת.</b></p>
+      <a class="btn wa" href="https://wa.me/972506300250?text=היי,%20אשמח%20לתאם%20טיפול%20פרימיום%20לראש%20השנה%20✨" target="_blank" rel="noopener">קבעו טיפול פרימיום ←</a>
     </div>
   </div>
 </section>
